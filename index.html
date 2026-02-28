@@ -4,47 +4,106 @@
     <title>Emrah News</title>
     <style>
         body {
-            font-family: Arial;
-            background-color: #111;
             margin: 0;
+            font-family: Arial;
+            background: #111;
             color: white;
         }
+
         header {
             background: red;
             padding: 20px;
             text-align: center;
+            font-size: 30px;
+            font-weight: bold;
         }
-        .article {
+
+        nav {
+            background: black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
             background: #222;
+            width: 300px;
             margin: 20px;
-            padding: 20px;
             border-radius: 10px;
+            overflow: hidden;
             transition: 0.3s;
         }
-        .article:hover {
-            transform: scale(1.02);
+
+        .card:hover {
+            transform: scale(1.05);
         }
-        img {
+
+        .card img {
             width: 100%;
-            border-radius: 10px;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        footer {
+            background: black;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>🔥 Emrah News 🔥</h1>
-</header>
+<header>🔥 EMRAH NEWS 🔥</header>
 
-<div class="article">
-    <h2>BREAKING: My Website Is Live!</h2>
-    <p>This website is now officially online.</p>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200">
+        <div class="card-content">
+            <h3>Gaming News</h3>
+            <p>Click to read more...</p>
+            <a href="article1.html" style="color:red;">Read More</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200">
+        <div class="card-content">
+            <h3>Technology Update</h3>
+            <p>Click to read more...</p>
+            <a href="article2.html" style="color:red;">Read More</a>
+        </div>
+    </div>
+
 </div>
 
-<div class="article">
-    <h2>Gaming News</h2>
-    <p>Roblox and gaming updates coming soon...</p>
-</div>
+<footer>
+    © 2026 Emrah News
+</footer>
 
 </body>
 </html>
